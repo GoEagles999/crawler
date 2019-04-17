@@ -8,8 +8,8 @@ const urls = []
 const imgTag = new RegExp('<img','gi')
 // match every <a> tag in order to extract value of 'href' propery
 const anchorTag = new RegExp('<a','gi') 
-const hrefAttr = new RegExp('href')
-const srcAttr = new RegExp('src')
+const hrefAttr = new RegExp('href', 'gi')
+const srcAttr = new RegExp('src', 'gi')
 // placeholder for storing position of matched DOM node
 let result 
 
